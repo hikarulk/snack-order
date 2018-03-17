@@ -22,7 +22,13 @@ sourceCompatibility = 1.8
 repositories {
 	mavenCentral()
 }
-
+sourceSets {
+    main {
+        resources {
+            srcDirs "src/main/resources", "src/main/webapp"
+        }
+    }
+}
 
 dependencies {
   compile "org.springframework.boot:spring-boot-starter-parent:1.4.2.RELEASE"
